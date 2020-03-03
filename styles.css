@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sintony&display=swap');
+
+/* Navbar */
+.logo{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 92px;
+    height: 47px;
+}
+
+.navbar-light .navbar-toggler{
+    color: rgba(0,0,0,.5);
+    border-color: white !important;
+}
+
+.navbar-nav.mr-auto{
+    margin-left: auto !important;
+    margin-right: 0px !important;
+}
+
+.navbar.navbar-expand-lg.navbar-light.bg-light{
+    background-color: #82003c !important;
+}
+
+.navbar-brand{
+    color: #fcf9fa !important;
+}
+
+.nav-link{
+    color: #fcf9fa !important;
+}
+
+.form-control{
+    display: none !important;
+    width: 300px !important;
+    padding-top: 3px !important;
+}
+
+.btn{
+    display: none !important;
+}
+
+.btn.btn-info{
+    margin-left: 10px;
+}
+
+.btn-outline-success{
+    color: #fff !important;
+    background-color: #28a745 !important;
+    border-color: #28a745 !important;
+}
+
+/* Carrusel */
+.carousel-indicators li{
+    background-color: black !important;
+}
+
+/* Banner de Nosotros */
+.bannerInformacion{
+    height: auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    background-color: #f8efd2;
+}
+
+.tituloNosotros{
+    color: #5d6a73;
+    font-family: 'Playfair Display';
+    font-weight: 700 !important;
+}
+
+.nosotros{
+    margin-top: 15px;
+}
+
+/* Tipo de letra */
+.textFont{
+    font-family: 'Sintony';
+}
+
+
+@media (min-width:992px){
+
+    .logo{
+        left: 50px;
+    }
+
+    .navbar{
+        height: 80px;
+    }
+
+    .form-control{
+        display: block !important;
+        width: 300px !important;
+    }
+
+    .btn{
+        display: block !important;
+    }
+
+    .login{
+        display: none !important;
+    }
+}
