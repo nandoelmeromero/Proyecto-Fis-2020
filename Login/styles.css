@@ -56,18 +56,9 @@
     font-family: 'Sintony';
 }
 
-/* Formulario */
+/* Login */
 .form-control.form{
     display: block !important;
-}
-
-.form-control.formInput{
-    display: block !important;
-    margin: auto;
-}
-
-.form-control.formInput.apellido{
-    margin-top: 25px !important;
 }
 
 .form{
@@ -75,16 +66,20 @@
     margin-top: 50px;
 }
 
-
-.custom-checkbox{
-    margin-top: 0px !important;
+.form-control.formInput{
+    display: block !important;
+    margin: auto;
 }
 
 .btn.btn-primary.form{
     display: block !important;
 }
 
-.btn-registro{
+.contrasenaOlvidada{
+    color: gray !important;
+}
+
+.btn-sesion{
     display: block !important;
     background-color: #82003c !important;
     border-color: #82003c !important;
@@ -93,15 +88,6 @@
     margin: auto !important;
 }
 
-@media (min-width:725px){
-    .form-control.formInput.apellido{
-        margin-top: 0px !important;
-    }
-
-    .custom-checkbox{
-        margin-top: -20px !important;
-    }
-}
 
 @media (min-width:992px){
 
@@ -116,10 +102,6 @@
     .form-control{
         display: block !important;
         width: 300px !important;
-    }
-
-    .form-control.formInput.apellido{
-        margin-top: 0px !important;
     }
 
     .btn{
