@@ -31,17 +31,17 @@
                                 <a class="nav-link textFont" href="registro.html">Comprar una membresia<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link textFont" href="..\./Registro/registro.html">Registrate</a>
+                                <a class="nav-link textFont" href="..\./Registro/registro.php">Registrate</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link textFont login" href="login.html">Log in</a>
+                                <a class="nav-link textFont login" href="login.php">Log in</a>
                             </li>
                         </ul>
                         <form class="form-inline my-2 my-lg-0">
                             <input class="form-control mr-sm-2" placeholder="Ingresa una palabra" type="search" aria-label="Search">
                             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
                         </form>
-                        <a href="login.html"><button type="button" class="btn btn-info">Log in</button></a> 
+                        <a href="login.php"><button type="button" class="btn btn-info">Log in</button></a> 
                     </div>
                 </nav>
             </div>
@@ -52,28 +52,23 @@
 
         <div class="container-fluid">
             <div class="row">
-                <!-- Default form login -->
-                <form class="text-center border border-light p-5 form" action="#!">
+
+                <form class="text-center border border-light p-5 form" action="validar.php" method="post">
 
                     <p class="h4 mb-4">Inicia Sesión</p>
 
-                    <!-- Email -->
-                    <input type="email" id="defaultLoginFormEmail" class="form-control mb-4 formInput" placeholder="E-mail">
+                    <input type="email" id="defaultLoginFormEmail" class="form-control mb-4 formInput" placeholder="E-mail" name="usuario" required>
 
-                    <!-- Password -->
-                    <input type="password" id="defaultLoginFormPassword" class="form-control mb-4 formInput" placeholder="Password">
+                    <input type="password" id="defaultLoginFormPassword" class="form-control mb-4 formInput" placeholder="Password" name="contrasenia" required>
 
                     <div class="d-flex justify-content-around">
                         <div>
-                            <!-- Forgot password -->
                             <a href="" class="contrasenaOlvidada">¿Olvidaste tu contraseña?</a>
                         </div>
                     </div>
 
-                    <!-- Sign in button -->
                     <button class="btn btn-info btn-block my-4 btn-sesion" type="submit">Ingresar</button>
 
-                    <!-- Register -->
                     <p>¿No tienes una cuenta?
                         <a href="..\./Registro/registro.html">Registrate</a>
                     </p>
@@ -89,5 +84,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 </body>
 </html>

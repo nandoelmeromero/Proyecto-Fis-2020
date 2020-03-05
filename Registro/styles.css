@@ -75,7 +75,6 @@
     margin-top: 50px;
 }
 
-
 .custom-checkbox{
     margin-top: 0px !important;
 }
@@ -89,10 +88,30 @@
     background-color: #82003c !important;
     border-color: #82003c !important;
     margin-top: 40px !important;
-    width: 50% !important;
+    width: 30% !important;
     margin: auto !important;
 }
 
+/* Thank You page */
+.jumbotron{
+    background: white !important;
+}
+
+hr{
+    width: 70% !important;
+}
+
+.btn-reLogin{
+    width: 10% !important;
+    margin: auto !important;
+}
+
+.btn.btn-primary.btn-sm{
+    background-color: #82003c !important;
+    border-color: #82003c !important;
+}
+
+/* Medias */
 @media (min-width:725px){
     .form-control.formInput.apellido{
         margin-top: 0px !important;
