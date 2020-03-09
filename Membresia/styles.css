@@ -56,81 +56,64 @@
     font-family: 'Sintony';
 }
 
-/* Banner de Nosotros */
-.bannerInformacion{
-    height: auto;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 15px;
-    background-color: #f8efd2;
+/* Formulario */
+.form-control.form{
+    display: block !important;
 }
 
-.tituloNosotros{
-    color: #5d6a73;
-    font-family: 'Playfair Display';
-    font-weight: 700 !important;
+.form-control.formInput{
+    display: block !important;
+    margin: auto;
 }
 
-.nosotros{
-    margin-top: 15px;
+.form-control.formInput.apellido{
+    margin-top: 25px !important;
 }
 
-/* Carousel */
-.divider.divider-small {
-    margin: 22px auto !important;
-    background: transparent !important;
+.form{
+    margin: auto;
+    margin-top: 50px;
 }
 
-.divider.divider-small {
-    margin: 22px auto;
-    background: transparent;
+.custom-checkbox{
+    margin-top: 0px !important;
 }
 
-.divider.divider-small.divider-small-center hr {
-    margin-left: auto;
-    margin-right: auto;
+.btn.btn-primary.form{
+    display: block !important;
 }
 
-.divider {
-    border: 0;
-    height: 1px;
-    margin: 44px auto;
-    background: rgba(0, 0, 0, 0.06);
-    text-align: center;
-    position: relative;
-    clear: both;
-}
-
-hr{
-    width: 10%;
-    height: 1px;
-}
-
-html .divider.divider-primary.divider-small hr {
-    background: rgb(255, 73, 62);
+.btn-registro{
+    display: block !important;
+    background-color: #82003c !important;
+    border-color: #82003c !important;
+    margin-top: 40px !important;
+    width: 30% !important;
+    margin: auto !important;
 }
 
 
-.boxCarousel{
-    margin-top: 30px;
+.text{
+    color:white;
 }
 
-.blog .carousel-indicators {
-	left: 0;
-	top: 410px;
-    bottom: -40px;
+.btn-comprar{
+    width: 50%;
+    margin: auto;
+    background-color: #28a745 !important;
+    border-color: #28a745 !important;
+    display: block !important;
 }
 
-/* The colour of the indicators */
-.blog .carousel-indicators li {
-    background: #a3a3a3;
-    border-radius: 50%;
-    width: 15px;
-    height: 0px;
-}
+/* Medias */
+@media (min-width:725px){
+    .form-control.formInput.apellido{
+        margin-top: 0px !important;
+    }
 
-.blog .carousel-indicators .active {
-background: #707070;
+    .custom-checkbox{
+        margin-top: -20px !important;
+    }
 }
 
 @media (min-width:992px){
@@ -146,6 +129,10 @@ background: #707070;
     .form-control{
         display: block !important;
         width: 300px !important;
+    }
+
+    .form-control.formInput.apellido{
+        margin-top: 0px !important;
     }
 
     .btn{
