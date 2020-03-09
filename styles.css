@@ -52,56 +52,12 @@
     border-color: #28a745 !important;
 }
 
-/* Carrusel */
-.carousel-indicators li{
-    background-color: black !important;
+.consultaLibro{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
 }
 
-/* Banner de Nosotros */
-.bannerInformacion{
-    height: auto;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 15px;
-    background-color: #f8efd2;
-}
-
-.tituloNosotros{
-    color: #5d6a73;
-    font-family: 'Playfair Display';
-    font-weight: 700 !important;
-}
-
-.nosotros{
-    margin-top: 15px;
-}
-
-/* Tipo de letra */
-.textFont{
-    font-family: 'Sintony';
-}
-
-
-@media (min-width:992px){
-
-    .logo{
-        left: 50px;
-    }
-
-    .navbar{
-        height: 80px;
-    }
-
-    .form-control{
-        display: block !important;
-        width: 300px !important;
-    }
-
-    .btn{
-        display: block !important;
-    }
-
-    .login{
-        display: none !important;
-    }
+.espaciado{
+    margin-top: 20px;
 }
