@@ -12,9 +12,14 @@
     $filas = mysqli_num_rows($resultado);
 
     if($filas > 0){
+        
+        session_start();
+        $_SESSION['usuario'] = $usuario;
+        
         header(
-            "location:catalogoUser.html"
+            "location:acervoBibliograficoUser.php"
         );
+    
     }else{
         echo "Error en la autenticación";
     }
@@ -22,5 +27,8 @@
     mysqli_free_result($resultado);
 
     mysqli_close($conexion);
+
+    $consultaNombre = "SELECT nombre FROM usuarios WHERE correo = '$usuario' AND password = '$contrasenia' ";
+    $nombreUsuario = mysqli_query($conexion, $consultaNombre);
 
 ?>

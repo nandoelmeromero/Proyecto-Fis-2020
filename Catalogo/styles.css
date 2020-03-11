@@ -115,6 +115,7 @@ html .divider.divider-primary.divider-small hr {
     margin-top: 30px;
 }
 
+
 .blog .carousel-indicators {
 	left: 0;
 	top: 410px;
@@ -131,6 +132,11 @@ html .divider.divider-primary.divider-small hr {
 
 .blog .carousel-indicators .active {
 background: #707070;
+}
+
+/* Footer */
+.items-Footer{
+    text-align: center;
 }
 
 @media (min-width:992px){
@@ -155,4 +161,10 @@ background: #707070;
     .login{
         display: none !important;
     }
+
+    .items-Footer{
+        display: flex !important; 
+        justify-content: center;
+    }
+
 }

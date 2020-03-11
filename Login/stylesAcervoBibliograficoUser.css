@@ -56,6 +56,11 @@
     border-color: #28a745 !important;
 }
 
+.dropdown{
+    margin-top: 0px !important;
+    list-style: none !important;
+}
+
 .consultaLibro{
     display: flex;
     justify-content: center;
@@ -79,6 +84,7 @@
     margin-left: 50px;
 }
 
+/* Footer */
 .items-Footer{
     text-align: center;
 }

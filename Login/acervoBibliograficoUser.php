@@ -1,3 +1,13 @@
+<?php 
+    session_start();
+    error_reporting(0);
+    $varSesion = $_SESSION['usuario'];
+    if($varSesion == NULL || $varSesion = '' ){
+        echo "No hay autorización";
+        die();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>LOFCE</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesAcervoBibliograficoUser.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
@@ -33,9 +43,9 @@
                             <li class="nav-item">
                                 <a class="nav-link textFont" href="..\./Membresia/MembresiaOferta.html">Comprar una membresia<span class="sr-only">(current)</span></a>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a class="nav-link textFont" href="..\./Registro/registro.php">Registrate</a>
-                            </li>
+                            </li> -->
                             <li class="nav-item">
                                 <a class="nav-link textFont login" href="..\./Login/login.php">Log in</a>
                             </li>
@@ -44,7 +54,15 @@
                             <input class="form-control mr-sm-2 inputs-Nav" placeholder="Ingresa una palabra" type="search" aria-label="Search">
                             <button class="btn btn-outline-success my-2 my-sm-0 inputs-Nav" type="submit">Buscar</button>
                         </form>
-                        <a href="../Login/login.php"><button type="button" class="btn btn-info inputs-Nav">Log in</button></a>
+                        <!-- <button type="button" class="btn btn-info inputs-Nav">Log in</button> -->
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Bienvenido <?php echo $_SESSION['usuario'] ?></a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="cerrarSesion.php">Cerrar sesión</a>
+                            </div>
+                        </li>                    
+
                     </div>
                 </nav>
             </div>
@@ -76,12 +94,12 @@
                         </p>
                         
                         <!-- Carrito de compras y lectura online -->
-                        <!-- <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">
+                        <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">
                             
                             <img class="icons carrito" src="https://cdn.icon-icons.com/icons2/606/PNG/64/shopping-cart_icon-icons.com_56125.png" alt=""><strong>Comprar  en linea</strong>
                             <img class="icons libro" src="https://cdn.icon-icons.com/icons2/390/PNG/64/open-book_38991.png" alt=""><strong>Leer online</strong>
 
-                        </div> -->
+                        </div>
                         
     
                     </div>
@@ -109,10 +127,10 @@
                         </p>
                     
                         <!-- Carrito de compras y lectura online -->
-                        <!-- <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">
+                        <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">
                             <img class="icons carrito" src="https://cdn.icon-icons.com/icons2/606/PNG/64/shopping-cart_icon-icons.com_56125.png" alt=""><strong>Comprar  en linea</strong>
                             <img class="icons libro" src="https://cdn.icon-icons.com/icons2/390/PNG/64/open-book_38991.png" alt=""><strong>Leer online</strong>
-                        </div> -->
+                        </div>
                     
                     </div>
                    
@@ -141,10 +159,12 @@
                         </p>
                         
                         <!-- Carrito de compras y lectura online -->
-                        <!-- <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">
+                        <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">
+                            
                             <img class="icons carrito" src="https://cdn.icon-icons.com/icons2/606/PNG/64/shopping-cart_icon-icons.com_56125.png" alt=""><strong>Comprar  en linea</strong>
                             <img class="icons libro" src="https://cdn.icon-icons.com/icons2/390/PNG/64/open-book_38991.png" alt=""><strong>Leer online</strong>
-                        </div> -->
+
+                        </div>
                     
                     
                     </div>
@@ -169,10 +189,12 @@
                         </p>
                     
                         <!-- Carrito de compras y lectura online -->
-                        <!-- <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">   
+                        <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">
+                            
                             <img class="icons carrito" src="https://cdn.icon-icons.com/icons2/606/PNG/64/shopping-cart_icon-icons.com_56125.png" alt=""><strong>Comprar  en linea</strong>
                             <img class="icons libro" src="https://cdn.icon-icons.com/icons2/390/PNG/64/open-book_38991.png" alt=""><strong>Leer online</strong>
-                        </div> -->
+
+                        </div>
 
                     </div>
                    
@@ -201,10 +223,12 @@
                         </p>
                     
                         <!-- Carrito de compras y lectura online -->
-                        <!-- <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">   
+                        <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">
+                            
                             <img class="icons carrito" src="https://cdn.icon-icons.com/icons2/606/PNG/64/shopping-cart_icon-icons.com_56125.png" alt=""><strong>Comprar  en linea</strong>
                             <img class="icons libro" src="https://cdn.icon-icons.com/icons2/390/PNG/64/open-book_38991.png" alt=""><strong>Leer online</strong>
-                        </div> -->
+
+                        </div>
 
                     </div>
                    
@@ -231,10 +255,12 @@
                         </p>
                     
                         <!-- Carrito de compras y lectura online -->
-                        <!-- <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">
+                        <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">
+                            
                             <img class="icons carrito" src="https://cdn.icon-icons.com/icons2/606/PNG/64/shopping-cart_icon-icons.com_56125.png" alt=""><strong>Comprar  en linea</strong>
                             <img class="icons libro" src="https://cdn.icon-icons.com/icons2/390/PNG/64/open-book_38991.png" alt=""><strong>Leer online</strong>
-                        </div> -->
+
+                        </div>
                     
                     </div>
                    
@@ -260,10 +286,12 @@
                         </p>
                     
                         <!-- Carrito de compras y lectura online -->
-                        <!-- <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">   
+                        <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">
+                            
                             <img class="icons carrito" src="https://cdn.icon-icons.com/icons2/606/PNG/64/shopping-cart_icon-icons.com_56125.png" alt=""><strong>Comprar  en linea</strong>
                             <img class="icons libro" src="https://cdn.icon-icons.com/icons2/390/PNG/64/open-book_38991.png" alt=""><strong>Leer online</strong>
-                        </div> -->
+
+                        </div>
                     
                     </div>
                    
@@ -287,10 +315,12 @@
                         </p>
                     
                         <!-- Carrito de compras y lectura online -->
-                        <!-- <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">    
+                        <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">
+                            
                             <img class="icons carrito" src="https://cdn.icon-icons.com/icons2/606/PNG/64/shopping-cart_icon-icons.com_56125.png" alt=""><strong>Comprar  en linea</strong>
                             <img class="icons libro" src="https://cdn.icon-icons.com/icons2/390/PNG/64/open-book_38991.png" alt=""><strong>Leer online</strong>
-                        </div> -->
+
+                        </div>
                     
                     </div>
                    
@@ -315,10 +345,12 @@
                         </p>
                     
                         <!-- Carrito de compras y lectura online -->
-                        <!-- <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">   
+                        <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">
+                            
                             <img class="icons carrito" src="https://cdn.icon-icons.com/icons2/606/PNG/64/shopping-cart_icon-icons.com_56125.png" alt=""><strong>Comprar  en linea</strong>
                             <img class="icons libro" src="https://cdn.icon-icons.com/icons2/390/PNG/64/open-book_38991.png" alt=""><strong>Leer online</strong>
-                        </div> -->
+
+                        </div>
                     
                     </div>
                    
@@ -347,10 +379,12 @@
                         </p>
                     
                         <!-- Carrito de compras y lectura online -->
-                        <!-- <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">    
+                        <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">
+                            
                             <img class="icons carrito" src="https://cdn.icon-icons.com/icons2/606/PNG/64/shopping-cart_icon-icons.com_56125.png" alt=""><strong>Comprar  en linea</strong>
                             <img class="icons libro" src="https://cdn.icon-icons.com/icons2/390/PNG/64/open-book_38991.png" alt=""><strong>Leer online</strong>
-                        </div> -->
+
+                        </div>
                     
                     </div>
                    
@@ -374,10 +408,12 @@
                         </p>
                     
                         <!-- Carrito de compras y lectura online -->
-                        <!-- <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">   
+                        <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">
+                            
                             <img class="icons carrito" src="https://cdn.icon-icons.com/icons2/606/PNG/64/shopping-cart_icon-icons.com_56125.png" alt=""><strong>Comprar  en linea</strong>
                             <img class="icons libro" src="https://cdn.icon-icons.com/icons2/390/PNG/64/open-book_38991.png" alt=""><strong>Leer online</strong>
-                        </div> -->
+
+                        </div>
                     
                     </div>
                    
@@ -405,10 +441,12 @@
                         </p>
                     
                         <!-- Carrito de compras y lectura online -->
-                        <!-- <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">    
+                        <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">
+                            
                             <img class="icons carrito" src="https://cdn.icon-icons.com/icons2/606/PNG/64/shopping-cart_icon-icons.com_56125.png" alt=""><strong>Comprar  en linea</strong>
                             <img class="icons libro" src="https://cdn.icon-icons.com/icons2/390/PNG/64/open-book_38991.png" alt=""><strong>Leer online</strong>
-                        </div> -->
+
+                        </div>
                     
                     </div>
                    
@@ -433,10 +471,12 @@
                         </p>
                     
                         <!-- Carrito de compras y lectura online -->
-                        <!-- <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">    
+                        <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">
+                            
                             <img class="icons carrito" src="https://cdn.icon-icons.com/icons2/606/PNG/64/shopping-cart_icon-icons.com_56125.png" alt=""><strong>Comprar  en linea</strong>
                             <img class="icons libro" src="https://cdn.icon-icons.com/icons2/390/PNG/64/open-book_38991.png" alt=""><strong>Leer online</strong>
-                        </div> -->
+
+                        </div>
                     
                     </div>
                    
@@ -460,10 +500,12 @@
                         </p>
                     
                         <!-- Carrito de compras y lectura online -->
-                        <!-- <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">    
+                        <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">
+                            
                             <img class="icons carrito" src="https://cdn.icon-icons.com/icons2/606/PNG/64/shopping-cart_icon-icons.com_56125.png" alt=""><strong>Comprar  en linea</strong>
                             <img class="icons libro" src="https://cdn.icon-icons.com/icons2/390/PNG/64/open-book_38991.png" alt=""><strong>Leer online</strong>
-                        </div> -->
+
+                        </div>
                     
                     </div>
                    
@@ -490,10 +532,12 @@
                         </p>
                     
                         <!-- Carrito de compras y lectura online -->
-                        <!-- <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">    
+                        <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">
+                            
                             <img class="icons carrito" src="https://cdn.icon-icons.com/icons2/606/PNG/64/shopping-cart_icon-icons.com_56125.png" alt=""><strong>Comprar  en linea</strong>
                             <img class="icons libro" src="https://cdn.icon-icons.com/icons2/390/PNG/64/open-book_38991.png" alt=""><strong>Leer online</strong>
-                        </div> -->
+
+                        </div>
                     
                     </div>
                    
@@ -520,14 +564,20 @@
                         </p>
                     
                         <!-- Carrito de compras y lectura online -->
-                        <!-- <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">   
+                        <div class="opcionesUsuarioRegistrado" name="opcionesUsuarioRegistrado">
+                            
                             <img class="icons carrito" src="https://cdn.icon-icons.com/icons2/606/PNG/64/shopping-cart_icon-icons.com_56125.png" alt=""><strong>Comprar  en linea</strong>
                             <img class="icons libro" src="https://cdn.icon-icons.com/icons2/390/PNG/64/open-book_38991.png" alt=""><strong>Leer online</strong>
-                        </div> -->
+
+                        </div>
                     
                     </div>
+                   
                 </div>
+
             </div>
+
+
         </div>
 
     </main>

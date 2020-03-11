@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Document</title>
+    <title>LOFCE</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/v4-shims.css">
 </head>
 <body>
     
@@ -70,7 +72,7 @@
                     <button class="btn btn-info btn-block my-4 btn-sesion" type="submit">Ingresar</button>
 
                     <p>¿No tienes una cuenta?
-                        <a href="..\./Registro/registro.html">Registrate</a>
+                        <a href="../Registro/registro.php">Registrate</a>
                     </p>
 
                 </form>
@@ -80,6 +82,75 @@
         
     </main>
 
+    <footer class="page-footer" style="margin-top: 50px;">
+
+        <!-- Footer Elements -->
+        <div class="container">
+  
+            <!-- Grid row-->
+            <div class="row">
+  
+                <!-- Grid column -->
+                <div class="col-md-12" style="text-align: center;">
+                    <div class="mb-4 flex-center">
+  
+                        <!-- Facebook -->
+                        <a class="fb-ic">
+                            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        
+                        <!-- Twitter -->
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        
+                        <!-- Google +-->
+                        <a class="gplus-ic">
+                            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        
+                        <!--Linkedin -->
+                        <a class="li-ic">
+                            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        
+                        <!--Pinterest-->
+                        <a class="pin-ic">
+                            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+  
+            </div>
+            <!-- Grid row-->
+  
+        </div>
+        <!-- Footer Elements -->
+
+        <div class="items-Footer">
+            <li style="list-style: none; padding: 10px;">Facturación</li>
+            <li style="list-style: none; padding: 10px;">Venta en linea</li>
+            <li style="list-style: none; padding: 10px;">Institucional</li>
+            <li style="list-style: none; padding: 10px;">Bolsa de trabajo</li>
+            <li style="list-style: none; padding: 10px;">Aviso de privacidad</li>
+            <li style="list-style: none; padding: 10px;">Transparencia</li>
+            <li style="list-style: none; padding: 10px;">Contacto</li>
+        </div>
+  
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3" style="color:#82003c">Derechos reservados © Fondo de Cultura Económica 2020
+            <br>Coordinación de Tecnología
+        </div>
+        <!-- Copyright -->
+  
+    </footer>
+    <!-- Footer -->
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

@@ -105,6 +105,11 @@
     display: block !important;
 }
 
+/* Footer */
+.items-Footer{
+    text-align: center;
+}
+
 /* Medias */
 @media (min-width:725px){
     .form-control.formInput.apellido{
@@ -141,5 +146,10 @@
 
     .login{
         display: none !important;
+    }
+
+    .items-Footer{
+        display: flex !important; 
+        justify-content: center;
     }
 }

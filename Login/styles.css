@@ -88,6 +88,10 @@
     margin: auto !important;
 }
 
+.items-Footer{
+    text-align: center;
+}
+
 
 @media (min-width:992px){
 
@@ -110,5 +114,10 @@
 
     .login{
         display: none !important;
+    }
+
+    .items-Footer{
+        display: flex !important; 
+        justify-content: center;
     }
 }

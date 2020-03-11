@@ -81,6 +81,19 @@
     font-family: 'Sintony';
 }
 
+/* Seccion informativa */
+.textoInformativo{
+    margin-top: 60px;
+}
+
+.textoInformativo.imagen{
+    width: inherit;
+}
+
+/* Footer */
+.items-Footer{
+    text-align: center;
+}
 
 @media (min-width:992px){
 
@@ -104,4 +117,22 @@
     .login{
         display: none !important;
     }
+
+    .seccionInformativa{
+        display: flex;
+    }
+
+    .textoInformativo{
+        margin-top: 150px;
+    }
+
+    .textoInformativo.imagen{
+        width: auto;
+    }
+
+    .items-Footer{
+        display: flex !important; 
+        justify-content: center;
+    }
+
 }
