@@ -79,10 +79,13 @@
     margin-left: 50px;
 }
 
+<<<<<<< HEAD
 .items-Footer{
     text-align: center;
 }
 
+=======
+>>>>>>> 09448d4b4eaa1cdb996d69aeca446ad0599fb626
 
 @media (min-width:992px){
 
@@ -106,9 +109,12 @@
     .login{
         display: none !important;
     }
+<<<<<<< HEAD
 
     .items-Footer{
         display: flex !important; 
         justify-content: center;
     }
+=======
+>>>>>>> 09448d4b4eaa1cdb996d69aeca446ad0599fb626
 }

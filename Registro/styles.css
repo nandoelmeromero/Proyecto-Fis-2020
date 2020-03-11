@@ -116,8 +116,13 @@ a:hover{
 }
 
 /* Footer */
+<<<<<<< HEAD
 .items-Footer{
     text-align: center;
+=======
+.page-footer{
+    background: black !important;
+>>>>>>> 09448d4b4eaa1cdb996d69aeca446ad0599fb626
 }
 
 /* Medias */
