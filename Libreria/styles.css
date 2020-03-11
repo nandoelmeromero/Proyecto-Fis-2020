@@ -32,6 +32,10 @@
     color: #fcf9fa !important;
 }
 
+.inputs-Nav{
+    display: block !important;
+}
+
 .form-control{
     display: none !important;
     width: 300px !important;
@@ -60,4 +64,42 @@
 
 .espaciado{
     margin-top: 20px;
+}
+
+.opcionesUsuarioRegistrado{
+    display: none;
+}
+
+.icons{
+    height: 25px;
+    margin-right: 10px;
+}
+
+.icons.libro{
+    margin-left: 50px;
+}
+
+
+@media (min-width:992px){
+
+    .logo{
+        left: 50px;
+    }
+
+    .navbar{
+        height: 80px;
+    }
+
+    .form-control{
+        display: block !important;
+        width: 300px !important;
+    }
+
+    .btn{
+        display: block !important;
+    }
+
+    .login{
+        display: none !important;
+    }
 }

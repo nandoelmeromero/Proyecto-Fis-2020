@@ -32,6 +32,10 @@
     color: #fcf9fa !important;
 }
 
+.inputs-Nav{
+    display: block !important;
+}
+
 .form-control{
     display: none !important;
     width: 300px !important;
@@ -52,84 +56,34 @@
     border-color: #28a745 !important;
 }
 
-.textFont{
-    font-family: 'Sintony';
+.dropdown{
+    margin-top: 0px !important;
+    list-style: none !important;
 }
 
-/* Formulario */
-.form-control.form{
-    display: block !important;
-}
-
-.form-control.formInput{
-    display: block !important;
-    margin: auto;
-}
-
-.form-control.formInput.apellido{
-    margin-top: 25px !important;
-}
-
-.form{
-    margin: auto;
+.consultaLibro{
+    display: flex;
+    justify-content: center;
     margin-top: 50px;
 }
 
-.custom-checkbox{
-    margin-top: 0px !important;
+.espaciado{
+    margin-top: 20px;
 }
 
-.btn.btn-primary.form{
-    display: block !important;
+.opcionesUsuarioRegistrado{
+    display: none;
 }
 
-.btn-registro{
-    display: block !important;
-    background-color: #82003c !important;
-    border-color: #82003c !important;
-    margin-top: 40px !important;
-    width: 30% !important;
-    margin: auto !important;
+.icons{
+    height: 25px;
+    margin-right: 10px;
 }
 
-/* Thank You page */
-.jumbotron{
-    background: white !important;
+.icons.libro{
+    margin-left: 50px;
 }
 
-hr{
-    width: 70% !important;
-}
-
-.btn-reLogin{
-    width: 10% !important;
-    margin: auto !important;
-}
-
-.btn.btn-primary.btn-sm{
-    background-color: #82003c !important;
-    border-color: #82003c !important;
-}
-
-a:hover{
-    text-decoration: none !important;
-}
-
-/* Footer */
-.page-footer{
-    background: black !important;
-}
-
-/* Medias */
-@media (min-width:725px){
-    .form-control.formInput.apellido{
-        margin-top: 0px !important;
-    }
-
-    .custom-checkbox{
-        margin-top: -20px !important;
-    }
-}
 
 @media (min-width:992px){
 
@@ -144,10 +98,6 @@ a:hover{
     .form-control{
         display: block !important;
         width: 300px !important;
-    }
-
-    .form-control.formInput.apellido{
-        margin-top: 0px !important;
     }
 
     .btn{
