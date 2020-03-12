@@ -11,7 +11,7 @@ Este es un proyecto escolar, enfocado en la UEA de Ingeniería de Software de la
     Windows: C:\XAMPP\htdocs\
     linux: /opt/lampp/htdocs
     
-    Dentro de htdocs, crear una carpeta con el nombre que deseen y dentro de esta carpeta pegan todos los archivos tal cual estan en este repo
+    Dentro de htdocs, crear una carpeta con el nombre Proyecto-Fis-2020 y dentro de esta carpeta pegan todos los archivos tal cual estan en este repositorio
 
 4. Iniciar XAMPP, activando apache y mysql.
 
